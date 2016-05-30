@@ -2010,6 +2010,8 @@
 		4A78DA5D1CFB300E00B8C0D0 /* ODUnsignedLong.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ODUnsignedLong.mm; path = dcmtkObjc/objcWrapper/ODUnsignedLong.mm; sourceTree = SOURCE_ROOT; };
 		4A78DA5E1CFB300E00B8C0D0 /* ODUnsignedShort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ODUnsignedShort.h; path = dcmtkObjc/objcWrapper/ODUnsignedShort.h; sourceTree = SOURCE_ROOT; };
 		4A78DA5F1CFB300E00B8C0D0 /* ODUnsignedShort.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ODUnsignedShort.mm; path = dcmtkObjc/objcWrapper/ODUnsignedShort.mm; sourceTree = SOURCE_ROOT; };
+		4A78DA721CFC7E5200B8C0D0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4A78DA731CFC7E5200B8C0D0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4A9059F61CF5F72700A9CA2F /* dcmtkObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dcmtkObjc; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -3317,6 +3319,8 @@
 		4A9059ED1CF5F72700A9CA2F = {
 			isa = PBXGroup;
 			children = (
+				4A78DA721CFC7E5200B8C0D0 /* README.md */,
+				4A78DA731CFC7E5200B8C0D0 /* LICENSE */,
 				4A78DA4D1CFB2EE400B8C0D0 /* libs_OSX10.11 */,
 				4A9059F81CF5F72700A9CA2F /* dcmtkObjc */,
 				4A9059F71CF5F72700A9CA2F /* Products */,
