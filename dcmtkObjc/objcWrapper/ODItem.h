@@ -3,11 +3,11 @@
 #import "ODSequence.h"
 #import "ODElement.h"
 
-#include "osconfig.h"
+#include "dcmtk/config/osconfig.h"
 //#include "dcvr.h"
-#include "dcitem.h"
-#include "dcsequen.h"
-#include "dcelem.h"
+#include "dcmtk/dcmdata/dcitem.h"
+#include "dcmtk/dcmdata/dcsequen.h"
+#include "dcmtk/dcmdata/dcelem.h"
 
 @protocol ODItem
 +(id)ODObjectWithDcm:(id)dcm parentNode:(id)pn tagPath:(NSString*)tp;

@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 
 #import "ODItem.h"
-#include "osconfig.h"
-#include "dcvr.h"
-#include "dcelem.h"
+#include "dcmtk/config/osconfig.h"
+#include "dcmtk/dcmdata/dcvr.h"
+#include "dcmtk/dcmdata/dcelem.h"
 
 @interface ODElement : NSObject
 {

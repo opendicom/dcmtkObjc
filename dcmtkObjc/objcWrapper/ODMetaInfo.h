@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 #import "ODItem.h"
 
-#include "osconfig.h"
+#include "dcmtk/config/osconfig.h"
 //#include "dcvr.h"
-#include "dcmetinf.h"
+#include "dcmtk/dcmdata/dcmetinf.h"
 
 @interface ODMetaInfo : ODItem <ODItem>
 {

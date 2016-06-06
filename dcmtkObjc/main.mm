@@ -11,9 +11,9 @@ int main(int argc, const char *argv[])
     ODFile *test=[[ODFile alloc]initWithFilePath:args[1]];
     
     //NSLog(@"tagPath: %@",[[[test dataset]find:@"00100010"]tagPath]);
-    //NSLog(@"tagPath: %@",[[[test dataset]SQAt:@"00081140"]tagPath]);    
-    //id i=[[test dataset]find:args[3]];
-    //if (i) NSLog(@"%@",[i stringValue]);
+    //NSLog(@"tagPath: %@",[[[test dataset]SQAt:@"00081140"]tagPath]);
+    id i=[[test dataset]find:@"00100010"];
+    if (i) NSLog(@"%@",[i stringValue]);
     //[i overwriteWithJSONValues:args[3]];
     //NSLog(@"ELE remove SQ 00081140 start (no subnodes)");
     //[i remove];
