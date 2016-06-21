@@ -4,10 +4,11 @@
 #import "ODMetaInfo.h"
 #import "ODDataset.h"
 
-#include "osconfig.h"
+#include "dcmtk/config/osconfig.h"
 //#include "dcvr.h"
-#include "dcfilefo.h"
+#include "dcmtk/dcmdata/dcfilefo.h"
 
+@class dcfilefo;
 @class ODDataset;
 @class ODMetaInfo;
 

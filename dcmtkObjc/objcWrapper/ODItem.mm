@@ -236,14 +236,14 @@
             case UI:
             case UR:
             case UT:
-                nodeElement = new DcmByteString(DcmTagKey(card/0x10000,card%0x10000));
-                if (![_receiverNode insertElement:nodeElement])return self;
+                //JF nodeElement = new DcmByteString(DcmTagKey(card/0x10000,card%0x10000));
+                //JF if (![_receiverNode insertElement:nodeElement])return self;
                 break;
                 //number strings
             case DS:
             case IS:
-                nodeElement = new DcmByteString(DcmTagKey(card/0x10000,card%0x10000));
-                if (![_receiverNode insertElement:nodeElement])return self;
+                //JF nodeElement = new DcmByteString(DcmTagKey(card/0x10000,card%0x10000));
+                //JF if (![_receiverNode insertElement:nodeElement])return self;
                 break;
                 
                 //number

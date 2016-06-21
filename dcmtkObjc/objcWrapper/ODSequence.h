@@ -1,10 +1,10 @@
 #import <Foundation/Foundation.h>
 #import "ODItem.h"
 
-#include "osconfig.h"
+#include "dcmtk/config/osconfig.h"
 //#include "dcvr.h"
-#include "dcsequen.h"
-#include "dcitem.h"
+#include "dcmtk/dcmdata/dcsequen.h"
+#include "dcmtk/dcmdata/dcitem.h"
 
 
 @interface ODSequence : NSObject
