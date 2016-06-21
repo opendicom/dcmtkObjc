@@ -2,18 +2,15 @@
 
 @implementation ODDataset
 
-+(id)ODObjectWithDcm:(id)dcm parentNode:(id)pn tagPath:(NSString*)tp {
-    return [[[[self class] alloc] initWithDcm:dcm parentNode:pn tagPath:tp]autorelease];
++(id)ODObjectWithDcmtk:(id)dcmtk parentNode:(id)pn tagPath:(NSString*)tp {
+    return [[[[self class] alloc] initWithDcmtk:dcmtk parentNode:pn tagPath:tp]autorelease];
 }
--(id)initWithDcm:(id)dcm parentNode:(id)pn tagPath:(NSString*)tp{
-    [self initWithReceiverNode:self parentNode:pn tagPath:tp];
-    if (self != nil)
-    {
-        _dcdatset=dcm;
-        return self;
-    }
+-(id)initWithDcmtk:(id)dcmtk parentNode:(id)pn tagPath:(NSString*)tp{
+    [self initWithReceiverNode:self dcmtk:dcmtk parentNode:pn tagPath:tp];
+    if (self != nil) return self;
     return nil;
 }
+
 -(DcmEVR)dcmEVR{
     NSLog(@"%@[%d] dcmEVR",[self debugDescription],[self retainCount]);
     return ((DcmDataset*)_dcdatset)->ident();
@@ -25,7 +22,7 @@
 }
 -(DcmElement*)elementForTagKey:(DcmTagKey)tk{
     DcmElement *e=NULL;
-    if ((((DcmDataset*)_dcdatset)->findAndGetElement(tk,e,OFFalse)).good()) return e;
+    if ((((DcmDataset*)_dcmtk)->findAndGetElement(tk,e,OFFalse)).good()) return e;
     return NULL;
 }
 -(BOOL)insertElement:(DcmElement*)e{

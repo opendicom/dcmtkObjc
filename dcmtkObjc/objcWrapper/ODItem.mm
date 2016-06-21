@@ -7,22 +7,31 @@
 
 @implementation ODItem
 
-#pragma mark protocol ODItem for subclass
-+(id)ODObjectWithDcm:(id)dcm parentNode:(id)pn tagPath:(NSString*)tp {
-    return [[[[self class] alloc] initWithDcm:dcm parentNode:pn tagPath:tp]autorelease];
+#pragma mark protocol ODObject
+
++(id)ODObjectWithDcmtk:(id)dcmtk parentNode:(id)pn tagPath:(NSString*)tp {
+    return [[[[self class] alloc] initWithDcmtk:dcmtk parentNode:pn tagPath:tp]autorelease];
 }
--(id)initWithDcm:(id)dcm parentNode:(id)pn tagPath:(NSString*)tp{
-    [self initWithReceiverNode:self parentNode:pn tagPath:tp];
-    if (self != nil)
-    {
-        _dcitem=dcm;
+-(id)initWithDcmtk:(id)dcmtk parentNode:(id)pn tagPath:(NSString*)tp{
+    [self initWithReceiverNode:self dcmtk:dcmtk parentNode:pn tagPath:tp];
+    if (self != nil) return self;
+    return nil;
+}
+
+-(id)initWithReceiverNode:(id)rn dcmtk:(id)dcmtk parentNode:(id)pn tagPath:(NSString*)tp
+{
+    if (self = [super initWithReceiverNode:rn dcmtk:dcmtk parentNode:pn tagPath:tp]) {
+        _sequences=[NSMutableDictionary dictionary];
+        _elements=[NSMutableDictionary dictionary];
         return self;
     }
     return nil;
 }
+
+
 -(DcmEVR)dcmEVR{
     NSLog(@"%@[%d] dcmEVR",[self debugDescription],[self retainCount]);
-    return ((DcmItem*)_dcitem)->ident();
+    return ((DcmItem*)_dcmtk)->ident();
 }
 -(NSString*)vrString
 {
@@ -35,22 +44,22 @@
 
 -(DcmSequenceOfItems*)sequenceOfItemsForTagKey:(DcmTagKey)tk{
     DcmSequenceOfItems *sq=NULL;
-    if ((((DcmItem*)_dcitem)->findAndGetSequence(tk,sq,OFFalse)).good()) return sq;
+    if ((((DcmItem*)_dcmtk)->findAndGetSequence(tk,sq,OFFalse)).good()) return sq;
     return NULL;
 }
 -(DcmElement*)elementForTagKey:(DcmTagKey)tk{
     DcmElement *e=NULL;
-    if ((((DcmItem*)_dcitem)->findAndGetElement(tk,e,OFFalse)).good()) return e;
+    if ((((DcmItem*)_dcmtk)->findAndGetElement(tk,e,OFFalse)).good()) return e;
     return NULL;
 }
 -(BOOL)insertElement:(DcmElement*)e{
-    return (((DcmItem*)_dcitem)->insert(e)).good();
+    return (((DcmItem*)_dcmtk)->insert(e)).good();
 }
 -(BOOL)insertSequenceOfIems:(DcmSequenceOfItems*)sq{
-    return (((DcmItem*)_dcitem)->insert(sq)).good();
+    return (((DcmItem*)_dcmtk)->insert(sq)).good();
 }
 -(void)deleteDcm{
-    delete (DcmItem*)_dcitem;
+    delete (DcmItem*)_dcmtk;
 }
 
 
@@ -58,26 +67,14 @@
 #pragma mark ODitem as a superclass
 
 -(DcmItem*)dcmItem{
-    if ([_receiverNode class]==[ODItem class]) return (DcmItem*)_dcitem;
+    if ([_receiverNode class]==[ODItem class]) return (DcmItem*)_dcmtk;
     return nil;
 }
 
 -(id)init{
     return nil;
 }
--(id)initWithReceiverNode:(id)rn parentNode:(id)pn tagPath:(NSString*)tp
-{
-    if (self = [super init]) {
-        _tagPath=tp;
-        _parentNode=pn;
-        _receiverNode=rn;
-        _sequences=[NSMutableDictionary dictionary];
-        _elements=[NSMutableDictionary dictionary];
-        NSLog(@"%d%@ \"%@\" ",[self retainCount],[self debugDescription],_tagPath);
-        return self;
-    }
-    return nil;
-}
+
 -(void)dealloc {
     NSLog(@"%d%@ \"%@\" -> dealloc",[self retainCount],[self debugDescription],_tagPath);
 	if (_receiverNode)[_receiverNode deleteDcm];
@@ -315,21 +312,21 @@
     return element;
 }
 
--(void)removeElement:(NSString*)removeTagPath
+-(void)removeChildElement:(NSString*)tagPath
 {
-    ODElement *removeODElement = (ODElement*)[_elements objectForKey:removeTagPath];
+    ODElement *removeODElement = (ODElement*)[_elements objectForKey:tagPath];
     [_receiverNode deleteDcm];
-    [_elements removeObjectForKey:removeTagPath];
-    NSLog(@"%d%@ \"%@\" removeElement  %d%@ \"%@\"",[self retainCount],[self debugDescription],_tagPath,[removeODElement retainCount],[removeODElement debugDescription],removeTagPath);
+    [_elements removeObjectForKey:tagPath];
+    NSLog(@"%d%@ \"%@\" removeElement  %d%@ \"%@\"",[self retainCount],[self debugDescription],_tagPath,[removeODElement retainCount],[removeODElement debugDescription],tagPath);
     [removeODElement release];
 }
 
--(void)removeSequence:(NSString*)removeTagPath
+-(void)removeChildSequence:(NSString*)tagPath
 {
-    ODSequence *removeODSequence = (ODSequence*)[_sequences objectForKey:removeTagPath];
+    ODSequence *removeODSequence = (ODSequence*)[_sequences objectForKey:tagPath];
     [_receiverNode deleteDcm];
-    [_sequences removeObjectForKey:removeTagPath];
-    NSLog(@"%d%@ \"%@\" removeSequence  %d%@ \"%@\"",[self retainCount],[self debugDescription],_tagPath,[removeODSequence retainCount],[removeODSequence debugDescription],removeTagPath);
+    [_sequences removeObjectForKey:tagPath];
+    NSLog(@"%d%@ \"%@\" removeSequence  %d%@ \"%@\"",[self retainCount],[self debugDescription],_tagPath,[removeODSequence retainCount],[removeODSequence debugDescription],tagPath);
     [removeODSequence release];
 }
 
@@ -361,8 +358,8 @@
 {
     NSMutableArray *mutableArray=[NSMutableArray array];
     
-    DcmObject* current = ((DcmItem*)_dcitem)->nextInContainer(NULL);
-    for( ; current; current = ((DcmItem*)_dcitem)->nextInContainer( current))
+    DcmObject* current = ((DcmItem*)_dcmtk)->nextInContainer(NULL);
+    for( ; current; current = ((DcmItem*)_dcmtk)->nextInContainer( current))
     {
         int evr=current->getVR();
         DcmTag dcmTag=current->getTag();
