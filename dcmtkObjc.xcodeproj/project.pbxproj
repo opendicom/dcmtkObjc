@@ -27,6 +27,8 @@
 		4A8770851D18D75B004B8240 /* libdcmdata.3.6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A876FCF1D18D466004B8240 /* libdcmdata.3.6.1.dylib */; };
 		4A8770861D18D75B004B8240 /* liboflog.3.6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A876FCD1D18D466004B8240 /* liboflog.3.6.1.dylib */; };
 		4A8770871D18D75B004B8240 /* libofstd.3.6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A876FC91D18D466004B8240 /* libofstd.3.6.1.dylib */; };
+		4A87708C1D198262004B8240 /* ODObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A87708A1D198262004B8240 /* ODObject.h */; };
+		4A87708D1D198262004B8240 /* ODObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A87708B1D198262004B8240 /* ODObject.mm */; };
 		4AEFE7D21D040536005BA949 /* ODAttributeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEFE7C01D040536005BA949 /* ODAttributeTag.h */; };
 		4AEFE7D31D040536005BA949 /* ODAttributeTag.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFE7C11D040536005BA949 /* ODAttributeTag.mm */; };
 		4AEFE7D41D040536005BA949 /* ODByteString.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEFE7C21D040536005BA949 /* ODByteString.h */; };
@@ -743,6 +745,8 @@
 		4A78DA731CFC7E5200B8C0D0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4A78DBD01CFE37A200B8C0D0 /* dicom.dic */ = {isa = PBXFileReference; lastKnownFileType = text; path = dicom.dic; sourceTree = "<group>"; };
 		4A876F631D18D465004B8240 /* DCMTK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCMTK.xcodeproj; path = dcmtkXCode/DCMTK.xcodeproj; sourceTree = "<group>"; };
+		4A87708A1D198262004B8240 /* ODObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ODObject.h; path = dcmtkObjc/objcWrapper/ODObject.h; sourceTree = SOURCE_ROOT; };
+		4A87708B1D198262004B8240 /* ODObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ODObject.mm; path = dcmtkObjc/objcWrapper/ODObject.mm; sourceTree = SOURCE_ROOT; };
 		4A9059F61CF5F72700A9CA2F /* dcmtkObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dcmtkObjc; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEFE7C01D040536005BA949 /* ODAttributeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAttributeTag.h; sourceTree = "<group>"; };
 		4AEFE7C11D040536005BA949 /* ODAttributeTag.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ODAttributeTag.mm; sourceTree = "<group>"; };
@@ -784,6 +788,10 @@
 		4A41BCC31CF73CFA0055EC46 /* objcWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				4A87708A1D198262004B8240 /* ODObject.h */,
+				4A87708B1D198262004B8240 /* ODObject.mm */,
+				4A78CED01CFAF26C00B8C0D0 /* ODFile.h */,
+				4A78CEEC1CFAF26C00B8C0D0 /* ODFile.mm */,
 				4AEFE7BF1D040536005BA949 /* ODElementTypes */,
 				4A78CED81CFAF26C00B8C0D0 /* ODElement.h */,
 				4A78CED61CFAF26C00B8C0D0 /* ODElement.mm */,
@@ -796,8 +804,6 @@
 				4A78CED21CFAF26C00B8C0D0 /* ODMetaInfo.h */,
 				4A78CED51CFAF26C00B8C0D0 /* ODMetaInfo.mm */,
 				4A78CED71CFAF26C00B8C0D0 /* ODvr.h */,
-				4A78CED01CFAF26C00B8C0D0 /* ODFile.h */,
-				4A78CEEC1CFAF26C00B8C0D0 /* ODFile.mm */,
 			);
 			path = objcWrapper;
 			sourceTree = "<group>";
@@ -995,6 +1001,7 @@
 				4AEFE7DE1D040536005BA949 /* ODSignedShort.h in Headers */,
 				4A78CEF81CFAF26C00B8C0D0 /* ODElement.h in Headers */,
 				4AEFE7D81D040536005BA949 /* ODFloatingPointSingle.h in Headers */,
+				4A87708C1D198262004B8240 /* ODObject.h in Headers */,
 				4AEFE7E21D040536005BA949 /* ODUnsignedShort.h in Headers */,
 				4A78CEF01CFAF26C00B8C0D0 /* ODFile.h in Headers */,
 				4AEFE7D21D040536005BA949 /* ODAttributeTag.h in Headers */,
@@ -1726,6 +1733,7 @@
 				4A78CEF31CFAF26C00B8C0D0 /* ODItem.mm in Sources */,
 				4A78CF0C1CFAF26C00B8C0D0 /* ODFile.mm in Sources */,
 				4AEFE7D71D040536005BA949 /* ODFloatingPointDouble.mm in Sources */,
+				4A87708D1D198262004B8240 /* ODObject.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

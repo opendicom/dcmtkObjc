@@ -14,7 +14,7 @@
                      ERM_autoDetect
                      )).good())
         {
-            dataset=[ODDataset ODObjectWithDcm:(id)(file->getDataset()) parentNode:self tagPath:@""];
+            dataset=[ODDataset ODObjectWithDcmtk:(id)(file->getDataset()) parentNode:self tagPath:@""];
             //metaInfo=[ODMetaInfo ODObjectWithDcm:(id)(file->getMetaInfo()) parentNode:self tagPath:@""];
             return self;
         }

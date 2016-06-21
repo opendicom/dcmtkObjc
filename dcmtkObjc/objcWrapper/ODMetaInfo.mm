@@ -2,18 +2,15 @@
 
 @implementation ODMetaInfo
 
-+(id)ODObjectWithDcm:(id)dcm parentNode:(id)pn tagPath:(NSString*)tp {
-    return [[[[self class] alloc] initWithDcm:dcm parentNode:pn tagPath:tp]autorelease];
++(id)ODObjectWithDcmtk:(id)dcmtk parentNode:(id)pn tagPath:(NSString*)tp {
+    return [[[[self class] alloc] initWithDcmtk:dcmtk parentNode:pn tagPath:tp]autorelease];
 }
--(id)initWithDcm:(id)dcm parentNode:(id)pn tagPath:(NSString*)tp{
-    [self initWithReceiverNode:self parentNode:pn tagPath:tp];
-    if (self != nil)
-    {
-        _dcmetinf=dcm;
-        return self;
-    }
+-(id)initWithDcmtk:(id)dcmtk parentNode:(id)pn tagPath:(NSString*)tp{
+    [self initWithReceiverNode:self dcmtk:dcmtk parentNode:pn tagPath:tp];
+    if (self != nil) return self;
     return nil;
 }
+
 -(DcmEVR)dcmEVR{
     NSLog(@"%@[%d] dcmEVR",[self debugDescription],[self retainCount]);
     return ((DcmMetaInfo*)_dcmetinf)->ident();
