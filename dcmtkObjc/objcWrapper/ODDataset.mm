@@ -13,11 +13,11 @@
 
 -(DcmEVR)dcmEVR{
     NSLog(@"%@[%d] dcmEVR",[self debugDescription],[self retainCount]);
-    return ((DcmDataset*)_dcdatset)->ident();
+    return ((DcmDataset*)_dcmtk)->ident();
 }
 -(DcmSequenceOfItems*)sequenceOfItemsForTagKey:(DcmTagKey)tk{
     DcmSequenceOfItems *sq=NULL;
-    if ((((DcmDataset*)_dcdatset)->findAndGetSequence(tk,sq,OFFalse)).good()) return sq;
+    if ((((DcmDataset*)_dcmtk)->findAndGetSequence(tk,sq,OFFalse)).good()) return sq;
     return NULL;
 }
 -(DcmElement*)elementForTagKey:(DcmTagKey)tk{
@@ -26,13 +26,13 @@
     return NULL;
 }
 -(BOOL)insertElement:(DcmElement*)e{
-    return (((DcmDataset*)_dcdatset)->insert(e)).good();
+    return (((DcmDataset*)_dcmtk)->insert(e)).good();
 }
 -(BOOL)insertSequenceOfIems:(DcmSequenceOfItems*)sq{
-    return (((DcmDataset*)_dcdatset)->insert(sq)).good();
+    return (((DcmDataset*)_dcmtk)->insert(sq)).good();
 }
 -(void)deleteDcm{
-    delete (DcmDataset*)_dcdatset;
+    delete (DcmDataset*)_dcmtk;
 }
 /*
 -(void)dealloc {
@@ -44,8 +44,8 @@
 {
     NSMutableArray *mutableArray=[NSMutableArray array];
     
-    DcmObject* current = ((DcmDataset*)_dcdatset)->nextInContainer(NULL);
-    for( ; current; current = ((DcmDataset*)_dcdatset)->nextInContainer( current))
+    DcmObject* current = ((DcmDataset*)_dcmtk)->nextInContainer(NULL);
+    for( ; current; current = ((DcmDataset*)_dcmtk)->nextInContainer( current))
     {
         int evr=current->getVR();
         DcmTag dcmTag=current->getTag();

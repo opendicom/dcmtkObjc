@@ -7,7 +7,6 @@
 
 @interface ODDataset : ODItem <ODItem>
 {
-    id                   _dcdatset ;
 }
 
 @end

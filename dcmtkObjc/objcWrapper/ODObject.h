@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "NSString+opendicom.h"
 #include "dcmtk/config/osconfig.h"
-#include "dcvr.h"
+#include "dcmtk/dcmdata/dcvr.h"
 
 @protocol ODObject
 
