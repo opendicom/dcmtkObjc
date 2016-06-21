@@ -24,6 +24,9 @@
 		4A78CF0C1CFAF26C00B8C0D0 /* ODFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A78CEEC1CFAF26C00B8C0D0 /* ODFile.mm */; };
 		4A78CF0F1CFAF28E00B8C0D0 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A78CF0E1CFAF28E00B8C0D0 /* main.mm */; };
 		4A78DA4C1CFB2CCF00B8C0D0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A78CE931CFA4BEB00B8C0D0 /* libz.tbd */; };
+		4A8770851D18D75B004B8240 /* libdcmdata.3.6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A876FCF1D18D466004B8240 /* libdcmdata.3.6.1.dylib */; };
+		4A8770861D18D75B004B8240 /* liboflog.3.6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A876FCD1D18D466004B8240 /* liboflog.3.6.1.dylib */; };
+		4A8770871D18D75B004B8240 /* libofstd.3.6.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A876FC91D18D466004B8240 /* libofstd.3.6.1.dylib */; };
 		4AEFE7D21D040536005BA949 /* ODAttributeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEFE7C01D040536005BA949 /* ODAttributeTag.h */; };
 		4AEFE7D31D040536005BA949 /* ODAttributeTag.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFE7C11D040536005BA949 /* ODAttributeTag.mm */; };
 		4AEFE7D41D040536005BA949 /* ODByteString.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEFE7C21D040536005BA949 /* ODByteString.h */; };
@@ -44,6 +47,667 @@
 		4AEFE7E31D040536005BA949 /* ODUnsignedShort.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFE7D11D040536005BA949 /* ODUnsignedShort.mm */; };
 		4AEFE7E81D040719005BA949 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEFE7E71D040719005BA949 /* libiconv.tbd */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A876FC81D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14B6F0A790EA4A3682176309;
+			remoteInfo = ofstd;
+		};
+		4A876FCA1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5EFC99494E0E46CAB84227EC;
+			remoteInfo = ofstd_tests;
+		};
+		4A876FCC1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 491F05BAA256429EBA5016A1;
+			remoteInfo = oflog;
+		};
+		4A876FCE1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3103756E04D54810B130130B;
+			remoteInfo = dcmdata;
+		};
+		4A876FD01D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8578D32096F04E9A84CE4164;
+			remoteInfo = mkdeftag;
+		};
+		4A876FD21D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7A16BDAE66A4B0688579D99;
+			remoteInfo = mkdictbi;
+		};
+		4A876FD41D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8CA42928512A40A1B3DF0596;
+			remoteInfo = i2d;
+		};
+		4A876FD61D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CF0CE1592B084EC794B2BB03;
+			remoteInfo = dcm2pdf;
+		};
+		4A876FD81D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 284C0EC7651B481CB55F97BF;
+			remoteInfo = dcm2xml;
+		};
+		4A876FDA1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 157C4F5A33AF4B899E806862;
+			remoteInfo = dcmconv;
+		};
+		4A876FDC1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 574EBFA5FE6440B89BA6403E;
+			remoteInfo = dcmcrle;
+		};
+		4A876FDE1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4BAD38D3957484F902ED9FB;
+			remoteInfo = dcmdrle;
+		};
+		4A876FE01D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 77CCF3F9809D465E9038F300;
+			remoteInfo = dcmdump;
+		};
+		4A876FE21D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 067D124881E24C9BAF4F2BB1;
+			remoteInfo = dcmftest;
+		};
+		4A876FE41D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2B16F7CA95C449C18C6521F3;
+			remoteInfo = dcmgpdir;
+		};
+		4A876FE61D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE37C5A623B74420B9F19BA5;
+			remoteInfo = dcmodify;
+		};
+		4A876FE81D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2BA6CD68920E42FB9F4269E9;
+			remoteInfo = dump2dcm;
+		};
+		4A876FEA1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE6FEB336ED1452689188F73;
+			remoteInfo = img2dcm;
+		};
+		4A876FEC1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D5D1F77C21834ACA8132C778;
+			remoteInfo = pdf2dcm;
+		};
+		4A876FEE1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11E6E91277CE453BB4EC5B15;
+			remoteInfo = xml2dcm;
+		};
+		4A876FF01D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9DE41547D66F49188599DD7D;
+			remoteInfo = dcmdata_tests;
+		};
+		4A876FF21D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF14EF9CCE234DF5B07D08C0;
+			remoteInfo = dcmimgle;
+		};
+		4A876FF41D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 098829DBD40444EBB4757E44;
+			remoteInfo = dcmdspfn;
+		};
+		4A876FF61D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 69E03780D9DA4A968BF72F78;
+			remoteInfo = dcod2lum;
+		};
+		4A876FF81D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D753BE44855D4015A81D882B;
+			remoteInfo = dconvlum;
+		};
+		4A876FFA1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB78D4173EF64144B5C018D6;
+			remoteInfo = dcmimage;
+		};
+		4A876FFC1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 16DA1B8344D146F2AB394EF6;
+			remoteInfo = dcm2pnm;
+		};
+		4A876FFE1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F1B0AD497FB4D60AF3E1569;
+			remoteInfo = dcmquant;
+		};
+		4A8770001D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 504304C9732C4F6DA5DA5798;
+			remoteInfo = dcmscale;
+		};
+		4A8770021D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 028AB3154A144ED0A6921716;
+			remoteInfo = dcmjpeg;
+		};
+		4A8770041D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01D27D011F6A49B0B447A09D;
+			remoteInfo = ijg8;
+		};
+		4A8770061D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3E857A4B89B04BE49850B2EA;
+			remoteInfo = ijg12;
+		};
+		4A8770081D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 77F179DFD7E6476DB9F56947;
+			remoteInfo = ijg16;
+		};
+		4A87700A1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1B6F530F1F9F477B9075C638;
+			remoteInfo = dcmcjpeg;
+		};
+		4A87700C1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD6C43EAECFE4E53B387973F;
+			remoteInfo = dcmdjpeg;
+		};
+		4A87700E1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E5E25AFB11794D37BFADE81A;
+			remoteInfo = dcmj2pnm;
+		};
+		4A8770101D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5DD97D2E75DB49EA92474CC4;
+			remoteInfo = dcmmkdir;
+		};
+		4A8770121D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D1350129F3B4C8BB1CBE0E1;
+			remoteInfo = dcmjpls;
+		};
+		4A8770141D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46DDC83EF039466F942503D4;
+			remoteInfo = charls;
+		};
+		4A8770161D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 76C7478DC54F408180035A45;
+			remoteInfo = dcmcjpls;
+		};
+		4A8770181D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B829A81F14B4431B9E01566;
+			remoteInfo = dcmdjpls;
+		};
+		4A87701A1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9D1F01DFCD948B7BCC8DA1C;
+			remoteInfo = dcml2pnm;
+		};
+		4A87701C1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3F7EDC2ABE46BF8FACFD43;
+			remoteInfo = dcmtls;
+		};
+		4A87701E1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7EFA78ECB6DF4C06B8D7640C;
+			remoteInfo = dcmnet;
+		};
+		4A8770201D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1C07A17FD914BFCBFA715BD;
+			remoteInfo = dcmrecv;
+		};
+		4A8770221D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0648CF52CD9A4B9D8C864673;
+			remoteInfo = dcmsend;
+		};
+		4A8770241D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C41DF058B9834B40B9A7E23D;
+			remoteInfo = echoscu;
+		};
+		4A8770261D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEF743E20BB94D01A7C2C799;
+			remoteInfo = findscu;
+		};
+		4A8770281D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5ACAB2913B384F7CB2F8F6FC;
+			remoteInfo = getscu;
+		};
+		4A87702A1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B838575AAF7484D8AC7D419;
+			remoteInfo = movescu;
+		};
+		4A87702C1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CEF1309FD9C7430EBF9E213F;
+			remoteInfo = storescp;
+		};
+		4A87702E1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9BC1D577815241C0AA6CCF0E;
+			remoteInfo = storescu;
+		};
+		4A8770301D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3E1210D14DBD44E782495AE8;
+			remoteInfo = termscu;
+		};
+		4A8770321D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8ABACA9720C4168BEECCF89;
+			remoteInfo = dcmnet_tests;
+		};
+		4A8770341D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BF662CF92EB4AB0A846A63A;
+			remoteInfo = dcmsr;
+		};
+		4A8770361D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2F2CACAEBFCD43BCA995B2F6;
+			remoteInfo = cmr;
+		};
+		4A8770381D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4417C92963DE4A1CB0025FB8;
+			remoteInfo = dsr2html;
+		};
+		4A87703A1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E389CBA3DADD4C0BB14B1BA4;
+			remoteInfo = dsr2xml;
+		};
+		4A87703C1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5EBC71FE8954280923933BB;
+			remoteInfo = dsrdump;
+		};
+		4A87703E1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6AC1D99D3D1847978CFF0C2F;
+			remoteInfo = xml2dsr;
+		};
+		4A8770401D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9EFCBBF64A524AD0A9E3D0B3;
+			remoteInfo = dcmsr_tests;
+		};
+		4A8770421D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB06E9DE49D24924A203E287;
+			remoteInfo = mkreport;
+		};
+		4A8770441D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 923EBA73590642F98DC34208;
+			remoteInfo = dcmdsig;
+		};
+		4A8770461D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB692285F20E429DB268E469;
+			remoteInfo = dcmsign;
+		};
+		4A8770481D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3FC4ACA37A0D492D9BDCA1B0;
+			remoteInfo = dcmwlm;
+		};
+		4A87704A1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4E6E72B1016D4E8CA2CD18FF;
+			remoteInfo = wlmscpfs;
+		};
+		4A87704C1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1385E273BF7D485DBFA59459;
+			remoteInfo = dcmqrdb;
+		};
+		4A87704E1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DC914E04EA149B8831C2FC7;
+			remoteInfo = dcmqridx;
+		};
+		4A8770501D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7643239D12254DF8A94766B1;
+			remoteInfo = dcmqrscp;
+		};
+		4A8770521D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9E47755863BF4AFCBD1971B5;
+			remoteInfo = dcmqrti;
+		};
+		4A8770541D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B595029FC1E40CDA748D634;
+			remoteInfo = dcmpstat;
+		};
+		4A8770561D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A28524A799F344CEAD63B29B;
+			remoteInfo = dcmmkcrv;
+		};
+		4A8770581D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F74EE80304B847AE91FF4458;
+			remoteInfo = dcmmklut;
+		};
+		4A87705A1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A67C6C0E41C642ED8E546777;
+			remoteInfo = dcmp2pgm;
+		};
+		4A87705C1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AFFB05A9BFC541FB8BE6B242;
+			remoteInfo = dcmprscp;
+		};
+		4A87705E1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A28F7039D99940A4B117E5BC;
+			remoteInfo = dcmprscu;
+		};
+		4A8770601D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0458F225AA5454D82712241;
+			remoteInfo = dcmpschk;
+		};
+		4A8770621D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C35ADD90E662478B83C6F370;
+			remoteInfo = dcmpsmk;
+		};
+		4A8770641D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6A185D00F224930972C8D9B;
+			remoteInfo = dcmpsprt;
+		};
+		4A8770661D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05C6B726D9A240FC9AD6B023;
+			remoteInfo = dcmpsrcv;
+		};
+		4A8770681D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 733B2A0D12814E8C880C5E8B;
+			remoteInfo = dcmpssnd;
+		};
+		4A87706A1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE5BF3C372974AC28995FF37;
+			remoteInfo = dcmrt;
+		};
+		4A87706C1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9E0AB017D1334853AC7C600C;
+			remoteInfo = drtdump;
+		};
+		4A87706E1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30F972CD7BB64D1EAF602F33;
+			remoteInfo = dcmrt_tests;
+		};
+		4A8770701D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F2F71CC1688C42648D78C5D0;
+			remoteInfo = drttest;
+		};
+		4A8770721D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8457C9BF3BED4AB8A2F02C76;
+			remoteInfo = dcmiod;
+		};
+		4A8770741D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 33F87863188342ABA6821A49;
+			remoteInfo = dcmiod_tests;
+		};
+		4A8770761D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1504DB08E69747C8B17EBE2B;
+			remoteInfo = dcmfg;
+		};
+		4A8770781D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8957E99D5CE14C26884620A6;
+			remoteInfo = dcmseg;
+		};
+		4A87707A1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC1055E038647F991E573C1;
+			remoteInfo = dcmseg_tests;
+		};
+		4A87707C1D18D466004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1145DB90DAFA4A06B415F4EC;
+			remoteInfo = dcmtract;
+		};
+		4A87707F1D18D6CF004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 66773D2AE28F4ED8A0769CE9;
+			remoteInfo = ofstd;
+		};
+		4A8770811D18D6CF004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 67D109161F4442E0AA6E1292;
+			remoteInfo = oflog;
+		};
+		4A8770831D18D6CF004B8240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D6F61F92A17B4EFE966DB540;
+			remoteInfo = dcmdata;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4A9059F41CF5F72700A9CA2F /* CopyFiles */ = {
@@ -77,24 +741,8 @@
 		4A78CF0E1CFAF28E00B8C0D0 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = dcmtkObjc/main.mm; sourceTree = SOURCE_ROOT; };
 		4A78DA721CFC7E5200B8C0D0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4A78DA731CFC7E5200B8C0D0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		4A78DBBF1CFE37A200B8C0D0 /* colortransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = colortransform.h; sourceTree = "<group>"; };
-		4A78DBC01CFE37A200B8C0D0 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		4A78DBC11CFE37A200B8C0D0 /* context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
-		4A78DBC21CFE37A200B8C0D0 /* contextrunmode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contextrunmode.h; sourceTree = "<group>"; };
-		4A78DBC31CFE37A200B8C0D0 /* decoderstrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = decoderstrategy.h; sourceTree = "<group>"; };
-		4A78DBC41CFE37A200B8C0D0 /* defaulttraits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defaulttraits.h; sourceTree = "<group>"; };
-		4A78DBC51CFE37A200B8C0D0 /* encoderstrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = encoderstrategy.h; sourceTree = "<group>"; };
-		4A78DBC61CFE37A200B8C0D0 /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
-		4A78DBC71CFE37A200B8C0D0 /* interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interface.h; sourceTree = "<group>"; };
-		4A78DBC81CFE37A200B8C0D0 /* jpegmarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jpegmarker.h; sourceTree = "<group>"; };
-		4A78DBC91CFE37A200B8C0D0 /* lookuptable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lookuptable.h; sourceTree = "<group>"; };
-		4A78DBCA1CFE37A200B8C0D0 /* losslesstraits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = losslesstraits.h; sourceTree = "<group>"; };
-		4A78DBCB1CFE37A200B8C0D0 /* processline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = processline.h; sourceTree = "<group>"; };
-		4A78DBCC1CFE37A200B8C0D0 /* publictypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = publictypes.h; sourceTree = "<group>"; };
-		4A78DBCD1CFE37A200B8C0D0 /* scan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scan.h; sourceTree = "<group>"; };
-		4A78DBCE1CFE37A200B8C0D0 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
-		4A78DBCF1CFE37A200B8C0D0 /* libCharLS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCharLS.a; sourceTree = "<group>"; };
 		4A78DBD01CFE37A200B8C0D0 /* dicom.dic */ = {isa = PBXFileReference; lastKnownFileType = text; path = dicom.dic; sourceTree = "<group>"; };
+		4A876F631D18D465004B8240 /* DCMTK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCMTK.xcodeproj; path = dcmtkXCode/DCMTK.xcodeproj; sourceTree = "<group>"; };
 		4A9059F61CF5F72700A9CA2F /* dcmtkObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dcmtkObjc; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEFE7C01D040536005BA949 /* ODAttributeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODAttributeTag.h; sourceTree = "<group>"; };
 		4AEFE7C11D040536005BA949 /* ODAttributeTag.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ODAttributeTag.mm; sourceTree = "<group>"; };
@@ -122,6 +770,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8770851D18D75B004B8240 /* libdcmdata.3.6.1.dylib in Frameworks */,
+				4A8770861D18D75B004B8240 /* liboflog.3.6.1.dylib in Frameworks */,
+				4A8770871D18D75B004B8240 /* libofstd.3.6.1.dylib in Frameworks */,
 				4AEFE7E81D040719005BA949 /* libiconv.tbd in Frameworks */,
 				4A78DA4C1CFB2CCF00B8C0D0 /* libz.tbd in Frameworks */,
 			);
@@ -169,45 +820,111 @@
 			name = libs_OSX10.11;
 			sourceTree = "<group>";
 		};
-		4A78DBBD1CFE37A200B8C0D0 /* CharLS */ = {
+		4A876F641D18D465004B8240 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A78DBBE1CFE37A200B8C0D0 /* include */,
-				4A78DBCF1CFE37A200B8C0D0 /* libCharLS.a */,
+				4A876FC91D18D466004B8240 /* libofstd.3.6.1.dylib */,
+				4A876FCB1D18D466004B8240 /* ofstd_tests */,
+				4A876FCD1D18D466004B8240 /* liboflog.3.6.1.dylib */,
+				4A876FCF1D18D466004B8240 /* libdcmdata.3.6.1.dylib */,
+				4A876FD11D18D466004B8240 /* mkdeftag */,
+				4A876FD31D18D466004B8240 /* mkdictbi */,
+				4A876FD51D18D466004B8240 /* libi2d.3.6.1.dylib */,
+				4A876FD71D18D466004B8240 /* dcm2pdf */,
+				4A876FD91D18D466004B8240 /* dcm2xml */,
+				4A876FDB1D18D466004B8240 /* dcmconv */,
+				4A876FDD1D18D466004B8240 /* dcmcrle */,
+				4A876FDF1D18D466004B8240 /* dcmdrle */,
+				4A876FE11D18D466004B8240 /* dcmdump */,
+				4A876FE31D18D466004B8240 /* dcmftest */,
+				4A876FE51D18D466004B8240 /* dcmgpdir */,
+				4A876FE71D18D466004B8240 /* dcmodify */,
+				4A876FE91D18D466004B8240 /* dump2dcm */,
+				4A876FEB1D18D466004B8240 /* img2dcm */,
+				4A876FED1D18D466004B8240 /* pdf2dcm */,
+				4A876FEF1D18D466004B8240 /* xml2dcm */,
+				4A876FF11D18D466004B8240 /* dcmdata_tests */,
+				4A876FF31D18D466004B8240 /* libdcmimgle.3.6.1.dylib */,
+				4A876FF51D18D466004B8240 /* dcmdspfn */,
+				4A876FF71D18D466004B8240 /* dcod2lum */,
+				4A876FF91D18D466004B8240 /* dconvlum */,
+				4A876FFB1D18D466004B8240 /* libdcmimage.3.6.1.dylib */,
+				4A876FFD1D18D466004B8240 /* dcm2pnm */,
+				4A876FFF1D18D466004B8240 /* dcmquant */,
+				4A8770011D18D466004B8240 /* dcmscale */,
+				4A8770031D18D466004B8240 /* libdcmjpeg.3.6.1.dylib */,
+				4A8770051D18D466004B8240 /* libijg8.3.6.1.dylib */,
+				4A8770071D18D466004B8240 /* libijg12.3.6.1.dylib */,
+				4A8770091D18D466004B8240 /* libijg16.3.6.1.dylib */,
+				4A87700B1D18D466004B8240 /* dcmcjpeg */,
+				4A87700D1D18D466004B8240 /* dcmdjpeg */,
+				4A87700F1D18D466004B8240 /* dcmj2pnm */,
+				4A8770111D18D466004B8240 /* dcmmkdir */,
+				4A8770131D18D466004B8240 /* libdcmjpls.3.6.1.dylib */,
+				4A8770151D18D466004B8240 /* libcharls.3.6.1.dylib */,
+				4A8770171D18D466004B8240 /* dcmcjpls */,
+				4A8770191D18D466004B8240 /* dcmdjpls */,
+				4A87701B1D18D466004B8240 /* dcml2pnm */,
+				4A87701D1D18D466004B8240 /* libdcmtls.3.6.1.dylib */,
+				4A87701F1D18D466004B8240 /* libdcmnet.3.6.1.dylib */,
+				4A8770211D18D466004B8240 /* dcmrecv */,
+				4A8770231D18D466004B8240 /* dcmsend */,
+				4A8770251D18D466004B8240 /* echoscu */,
+				4A8770271D18D466004B8240 /* findscu */,
+				4A8770291D18D466004B8240 /* getscu */,
+				4A87702B1D18D466004B8240 /* movescu */,
+				4A87702D1D18D466004B8240 /* storescp */,
+				4A87702F1D18D466004B8240 /* storescu */,
+				4A8770311D18D466004B8240 /* termscu */,
+				4A8770331D18D466004B8240 /* dcmnet_tests */,
+				4A8770351D18D466004B8240 /* libdcmsr.3.6.1.dylib */,
+				4A8770371D18D466004B8240 /* libcmr.3.6.1.dylib */,
+				4A8770391D18D466004B8240 /* dsr2html */,
+				4A87703B1D18D466004B8240 /* dsr2xml */,
+				4A87703D1D18D466004B8240 /* dsrdump */,
+				4A87703F1D18D466004B8240 /* xml2dsr */,
+				4A8770411D18D466004B8240 /* dcmsr_tests */,
+				4A8770431D18D466004B8240 /* mkreport */,
+				4A8770451D18D466004B8240 /* libdcmdsig.3.6.1.dylib */,
+				4A8770471D18D466004B8240 /* dcmsign */,
+				4A8770491D18D466004B8240 /* libdcmwlm.3.6.1.dylib */,
+				4A87704B1D18D466004B8240 /* wlmscpfs */,
+				4A87704D1D18D466004B8240 /* libdcmqrdb.3.6.1.dylib */,
+				4A87704F1D18D466004B8240 /* dcmqridx */,
+				4A8770511D18D466004B8240 /* dcmqrscp */,
+				4A8770531D18D466004B8240 /* dcmqrti */,
+				4A8770551D18D466004B8240 /* libdcmpstat.3.6.1.dylib */,
+				4A8770571D18D466004B8240 /* dcmmkcrv */,
+				4A8770591D18D466004B8240 /* dcmmklut */,
+				4A87705B1D18D466004B8240 /* dcmp2pgm */,
+				4A87705D1D18D466004B8240 /* dcmprscp */,
+				4A87705F1D18D466004B8240 /* dcmprscu */,
+				4A8770611D18D466004B8240 /* dcmpschk */,
+				4A8770631D18D466004B8240 /* dcmpsmk */,
+				4A8770651D18D466004B8240 /* dcmpsprt */,
+				4A8770671D18D466004B8240 /* dcmpsrcv */,
+				4A8770691D18D466004B8240 /* dcmpssnd */,
+				4A87706B1D18D466004B8240 /* libdcmrt.3.6.1.dylib */,
+				4A87706D1D18D466004B8240 /* drtdump */,
+				4A87706F1D18D466004B8240 /* dcmrt_tests */,
+				4A8770711D18D466004B8240 /* drttest */,
+				4A8770731D18D466004B8240 /* libdcmiod.3.6.1.dylib */,
+				4A8770751D18D466004B8240 /* dcmiod_tests */,
+				4A8770771D18D466004B8240 /* libdcmfg.3.6.1.dylib */,
+				4A8770791D18D466004B8240 /* libdcmseg.3.6.1.dylib */,
+				4A87707B1D18D466004B8240 /* dcmseg_tests */,
+				4A87707D1D18D466004B8240 /* libdcmtract.3.6.1.dylib */,
 			);
-			path = CharLS;
-			sourceTree = "<group>";
-		};
-		4A78DBBE1CFE37A200B8C0D0 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				4A78DBBF1CFE37A200B8C0D0 /* colortransform.h */,
-				4A78DBC01CFE37A200B8C0D0 /* config.h */,
-				4A78DBC11CFE37A200B8C0D0 /* context.h */,
-				4A78DBC21CFE37A200B8C0D0 /* contextrunmode.h */,
-				4A78DBC31CFE37A200B8C0D0 /* decoderstrategy.h */,
-				4A78DBC41CFE37A200B8C0D0 /* defaulttraits.h */,
-				4A78DBC51CFE37A200B8C0D0 /* encoderstrategy.h */,
-				4A78DBC61CFE37A200B8C0D0 /* header.h */,
-				4A78DBC71CFE37A200B8C0D0 /* interface.h */,
-				4A78DBC81CFE37A200B8C0D0 /* jpegmarker.h */,
-				4A78DBC91CFE37A200B8C0D0 /* lookuptable.h */,
-				4A78DBCA1CFE37A200B8C0D0 /* losslesstraits.h */,
-				4A78DBCB1CFE37A200B8C0D0 /* processline.h */,
-				4A78DBCC1CFE37A200B8C0D0 /* publictypes.h */,
-				4A78DBCD1CFE37A200B8C0D0 /* scan.h */,
-				4A78DBCE1CFE37A200B8C0D0 /* util.h */,
-			);
-			path = include;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		4A9059ED1CF5F72700A9CA2F = {
 			isa = PBXGroup;
 			children = (
+				4A876F631D18D465004B8240 /* DCMTK.xcodeproj */,
 				4A78DA731CFC7E5200B8C0D0 /* LICENSE */,
 				4A78DA721CFC7E5200B8C0D0 /* README.md */,
 				4A9059F81CF5F72700A9CA2F /* dcmtkObjc */,
-				4A78DBBD1CFE37A200B8C0D0 /* CharLS */,
 				4A78DBD01CFE37A200B8C0D0 /* dicom.dic */,
 				4A78DA4D1CFB2EE400B8C0D0 /* libs_OSX10.11 */,
 				4A9059F71CF5F72700A9CA2F /* Products */,
@@ -301,6 +1018,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				4A8770801D18D6CF004B8240 /* PBXTargetDependency */,
+				4A8770821D18D6CF004B8240 /* PBXTargetDependency */,
+				4A8770841D18D6CF004B8240 /* PBXTargetDependency */,
 			);
 			name = dcmtkObjc;
 			productName = dcmtkObjcWrapper;
@@ -331,12 +1051,658 @@
 			mainGroup = 4A9059ED1CF5F72700A9CA2F;
 			productRefGroup = 4A9059F71CF5F72700A9CA2F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4A876F641D18D465004B8240 /* Products */;
+					ProjectRef = 4A876F631D18D465004B8240 /* DCMTK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4A9059F51CF5F72700A9CA2F /* dcmtkObjc */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4A876FC91D18D466004B8240 /* libofstd.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libofstd.3.6.1.dylib;
+			remoteRef = 4A876FC81D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FCB1D18D466004B8240 /* ofstd_tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ofstd_tests;
+			remoteRef = 4A876FCA1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FCD1D18D466004B8240 /* liboflog.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = liboflog.3.6.1.dylib;
+			remoteRef = 4A876FCC1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FCF1D18D466004B8240 /* libdcmdata.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmdata.3.6.1.dylib;
+			remoteRef = 4A876FCE1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FD11D18D466004B8240 /* mkdeftag */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = mkdeftag;
+			remoteRef = 4A876FD01D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FD31D18D466004B8240 /* mkdictbi */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = mkdictbi;
+			remoteRef = 4A876FD21D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FD51D18D466004B8240 /* libi2d.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libi2d.3.6.1.dylib;
+			remoteRef = 4A876FD41D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FD71D18D466004B8240 /* dcm2pdf */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcm2pdf;
+			remoteRef = 4A876FD61D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FD91D18D466004B8240 /* dcm2xml */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcm2xml;
+			remoteRef = 4A876FD81D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FDB1D18D466004B8240 /* dcmconv */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmconv;
+			remoteRef = 4A876FDA1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FDD1D18D466004B8240 /* dcmcrle */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmcrle;
+			remoteRef = 4A876FDC1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FDF1D18D466004B8240 /* dcmdrle */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmdrle;
+			remoteRef = 4A876FDE1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FE11D18D466004B8240 /* dcmdump */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmdump;
+			remoteRef = 4A876FE01D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FE31D18D466004B8240 /* dcmftest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmftest;
+			remoteRef = 4A876FE21D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FE51D18D466004B8240 /* dcmgpdir */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmgpdir;
+			remoteRef = 4A876FE41D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FE71D18D466004B8240 /* dcmodify */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmodify;
+			remoteRef = 4A876FE61D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FE91D18D466004B8240 /* dump2dcm */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dump2dcm;
+			remoteRef = 4A876FE81D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FEB1D18D466004B8240 /* img2dcm */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = img2dcm;
+			remoteRef = 4A876FEA1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FED1D18D466004B8240 /* pdf2dcm */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pdf2dcm;
+			remoteRef = 4A876FEC1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FEF1D18D466004B8240 /* xml2dcm */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = xml2dcm;
+			remoteRef = 4A876FEE1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FF11D18D466004B8240 /* dcmdata_tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmdata_tests;
+			remoteRef = 4A876FF01D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FF31D18D466004B8240 /* libdcmimgle.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmimgle.3.6.1.dylib;
+			remoteRef = 4A876FF21D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FF51D18D466004B8240 /* dcmdspfn */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmdspfn;
+			remoteRef = 4A876FF41D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FF71D18D466004B8240 /* dcod2lum */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcod2lum;
+			remoteRef = 4A876FF61D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FF91D18D466004B8240 /* dconvlum */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dconvlum;
+			remoteRef = 4A876FF81D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FFB1D18D466004B8240 /* libdcmimage.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmimage.3.6.1.dylib;
+			remoteRef = 4A876FFA1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FFD1D18D466004B8240 /* dcm2pnm */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcm2pnm;
+			remoteRef = 4A876FFC1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A876FFF1D18D466004B8240 /* dcmquant */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmquant;
+			remoteRef = 4A876FFE1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770011D18D466004B8240 /* dcmscale */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmscale;
+			remoteRef = 4A8770001D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770031D18D466004B8240 /* libdcmjpeg.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmjpeg.3.6.1.dylib;
+			remoteRef = 4A8770021D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770051D18D466004B8240 /* libijg8.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libijg8.3.6.1.dylib;
+			remoteRef = 4A8770041D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770071D18D466004B8240 /* libijg12.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libijg12.3.6.1.dylib;
+			remoteRef = 4A8770061D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770091D18D466004B8240 /* libijg16.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libijg16.3.6.1.dylib;
+			remoteRef = 4A8770081D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87700B1D18D466004B8240 /* dcmcjpeg */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmcjpeg;
+			remoteRef = 4A87700A1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87700D1D18D466004B8240 /* dcmdjpeg */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmdjpeg;
+			remoteRef = 4A87700C1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87700F1D18D466004B8240 /* dcmj2pnm */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmj2pnm;
+			remoteRef = 4A87700E1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770111D18D466004B8240 /* dcmmkdir */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmmkdir;
+			remoteRef = 4A8770101D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770131D18D466004B8240 /* libdcmjpls.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmjpls.3.6.1.dylib;
+			remoteRef = 4A8770121D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770151D18D466004B8240 /* libcharls.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libcharls.3.6.1.dylib;
+			remoteRef = 4A8770141D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770171D18D466004B8240 /* dcmcjpls */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmcjpls;
+			remoteRef = 4A8770161D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770191D18D466004B8240 /* dcmdjpls */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmdjpls;
+			remoteRef = 4A8770181D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87701B1D18D466004B8240 /* dcml2pnm */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcml2pnm;
+			remoteRef = 4A87701A1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87701D1D18D466004B8240 /* libdcmtls.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmtls.3.6.1.dylib;
+			remoteRef = 4A87701C1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87701F1D18D466004B8240 /* libdcmnet.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmnet.3.6.1.dylib;
+			remoteRef = 4A87701E1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770211D18D466004B8240 /* dcmrecv */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmrecv;
+			remoteRef = 4A8770201D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770231D18D466004B8240 /* dcmsend */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmsend;
+			remoteRef = 4A8770221D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770251D18D466004B8240 /* echoscu */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = echoscu;
+			remoteRef = 4A8770241D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770271D18D466004B8240 /* findscu */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = findscu;
+			remoteRef = 4A8770261D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770291D18D466004B8240 /* getscu */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = getscu;
+			remoteRef = 4A8770281D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87702B1D18D466004B8240 /* movescu */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = movescu;
+			remoteRef = 4A87702A1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87702D1D18D466004B8240 /* storescp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = storescp;
+			remoteRef = 4A87702C1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87702F1D18D466004B8240 /* storescu */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = storescu;
+			remoteRef = 4A87702E1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770311D18D466004B8240 /* termscu */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = termscu;
+			remoteRef = 4A8770301D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770331D18D466004B8240 /* dcmnet_tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmnet_tests;
+			remoteRef = 4A8770321D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770351D18D466004B8240 /* libdcmsr.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmsr.3.6.1.dylib;
+			remoteRef = 4A8770341D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770371D18D466004B8240 /* libcmr.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libcmr.3.6.1.dylib;
+			remoteRef = 4A8770361D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770391D18D466004B8240 /* dsr2html */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dsr2html;
+			remoteRef = 4A8770381D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87703B1D18D466004B8240 /* dsr2xml */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dsr2xml;
+			remoteRef = 4A87703A1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87703D1D18D466004B8240 /* dsrdump */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dsrdump;
+			remoteRef = 4A87703C1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87703F1D18D466004B8240 /* xml2dsr */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = xml2dsr;
+			remoteRef = 4A87703E1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770411D18D466004B8240 /* dcmsr_tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmsr_tests;
+			remoteRef = 4A8770401D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770431D18D466004B8240 /* mkreport */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = mkreport;
+			remoteRef = 4A8770421D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770451D18D466004B8240 /* libdcmdsig.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmdsig.3.6.1.dylib;
+			remoteRef = 4A8770441D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770471D18D466004B8240 /* dcmsign */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmsign;
+			remoteRef = 4A8770461D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770491D18D466004B8240 /* libdcmwlm.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmwlm.3.6.1.dylib;
+			remoteRef = 4A8770481D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87704B1D18D466004B8240 /* wlmscpfs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = wlmscpfs;
+			remoteRef = 4A87704A1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87704D1D18D466004B8240 /* libdcmqrdb.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmqrdb.3.6.1.dylib;
+			remoteRef = 4A87704C1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87704F1D18D466004B8240 /* dcmqridx */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmqridx;
+			remoteRef = 4A87704E1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770511D18D466004B8240 /* dcmqrscp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmqrscp;
+			remoteRef = 4A8770501D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770531D18D466004B8240 /* dcmqrti */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmqrti;
+			remoteRef = 4A8770521D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770551D18D466004B8240 /* libdcmpstat.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmpstat.3.6.1.dylib;
+			remoteRef = 4A8770541D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770571D18D466004B8240 /* dcmmkcrv */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmmkcrv;
+			remoteRef = 4A8770561D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770591D18D466004B8240 /* dcmmklut */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmmklut;
+			remoteRef = 4A8770581D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87705B1D18D466004B8240 /* dcmp2pgm */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmp2pgm;
+			remoteRef = 4A87705A1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87705D1D18D466004B8240 /* dcmprscp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmprscp;
+			remoteRef = 4A87705C1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87705F1D18D466004B8240 /* dcmprscu */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmprscu;
+			remoteRef = 4A87705E1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770611D18D466004B8240 /* dcmpschk */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmpschk;
+			remoteRef = 4A8770601D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770631D18D466004B8240 /* dcmpsmk */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmpsmk;
+			remoteRef = 4A8770621D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770651D18D466004B8240 /* dcmpsprt */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmpsprt;
+			remoteRef = 4A8770641D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770671D18D466004B8240 /* dcmpsrcv */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmpsrcv;
+			remoteRef = 4A8770661D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770691D18D466004B8240 /* dcmpssnd */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmpssnd;
+			remoteRef = 4A8770681D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87706B1D18D466004B8240 /* libdcmrt.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmrt.3.6.1.dylib;
+			remoteRef = 4A87706A1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87706D1D18D466004B8240 /* drtdump */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = drtdump;
+			remoteRef = 4A87706C1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87706F1D18D466004B8240 /* dcmrt_tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmrt_tests;
+			remoteRef = 4A87706E1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770711D18D466004B8240 /* drttest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = drttest;
+			remoteRef = 4A8770701D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770731D18D466004B8240 /* libdcmiod.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmiod.3.6.1.dylib;
+			remoteRef = 4A8770721D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770751D18D466004B8240 /* dcmiod_tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmiod_tests;
+			remoteRef = 4A8770741D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770771D18D466004B8240 /* libdcmfg.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmfg.3.6.1.dylib;
+			remoteRef = 4A8770761D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A8770791D18D466004B8240 /* libdcmseg.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmseg.3.6.1.dylib;
+			remoteRef = 4A8770781D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87707B1D18D466004B8240 /* dcmseg_tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dcmseg_tests;
+			remoteRef = 4A87707A1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4A87707D1D18D466004B8240 /* libdcmtract.3.6.1.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdcmtract.3.6.1.dylib;
+			remoteRef = 4A87707C1D18D466004B8240 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A9059F21CF5F72700A9CA2F /* Sources */ = {
@@ -364,6 +1730,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A8770801D18D6CF004B8240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ofstd;
+			targetProxy = 4A87707F1D18D6CF004B8240 /* PBXContainerItemProxy */;
+		};
+		4A8770821D18D6CF004B8240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = oflog;
+			targetProxy = 4A8770811D18D6CF004B8240 /* PBXContainerItemProxy */;
+		};
+		4A8770841D18D6CF004B8240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = dcmdata;
+			targetProxy = 4A8770831D18D6CF004B8240 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4A9059FB1CF5F72700A9CA2F /* Debug */ = {
@@ -404,11 +1788,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PRO$(PROJECT_DIR)/** $(PROJECT_DIR)/dcmtkXCode/config/include/** $(PROJECT_DIR)/dcmtk-3.6.1_20160216/ofstd/include/** $(PROJECT_DIR)/dcmtk-3.6.1_20160216/oflog/include/** $(PROJECT_DIR)/dcmtk-3.6.1_20160216/dcmdata/include/**";
+				HEADER_SEARCH_PATHS = "$(PRO$(PROJECT_DIR)/** $(PROJECT_DIR)/dcmtkXCode/config/include/** $(PROJECT_DIR)/dcmtk/ofstd/include/** $(PROJECT_DIR)/dcmtk/oflog/include/** $(PROJECT_DIR)/dcmtk/dcmdata/include/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.11;
 			};
 			name = Debug;
 		};
@@ -444,10 +1828,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PRO$(PROJECT_DIR)/** $(PROJECT_DIR)/dcmtkXCode/config/include/** $(PROJECT_DIR)/dcmtk-3.6.1_20160216/ofstd/include/** $(PROJECT_DIR)/dcmtk-3.6.1_20160216/oflog/include/** $(PROJECT_DIR)/dcmtk-3.6.1_20160216/dcmdata/include/**";
+				HEADER_SEARCH_PATHS = "$(PRO$(PROJECT_DIR)/** $(PROJECT_DIR)/dcmtkXCode/config/include/** $(PROJECT_DIR)/dcmtk/ofstd/include/** $(PROJECT_DIR)/dcmtk/oflog/include/** $(PROJECT_DIR)/dcmtk/dcmdata/include/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.11;
 			};
 			name = Release;
 		};
@@ -457,11 +1841,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"$(PROJECT_DIR)/dcmtkXCode/config/include/**",
-					"$(PROJECT_DIR)/dcmtkXdcmtk-3.6.1_20160216Code/ofstd/include/**",
-					"$(PROJECT_DIR)/dcmtk-3.6.1_20160216/oflog/include/**",
-					"$(PROJECT_DIR)/dcmtk-3.6.1_20160216/dcmdata/include/**",
+					"$(PROJECT_DIR)/dcmtk/ofstd/include/**",
+					"$(PROJECT_DIR)/dcmtk/oflog/include/**",
+					"$(PROJECT_DIR)/dcmtk/dcmdata/include/**",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = dcmtkObjc;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -471,11 +1857,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"$(PROJECT_DIR)/dcmtkXCode/config/include/**",
-					"$(PROJECT_DIR)/dcmtkXdcmtk-3.6.1_20160216Code/ofstd/include/**",
-					"$(PROJECT_DIR)/dcmtk-3.6.1_20160216/oflog/include/**",
-					"$(PROJECT_DIR)/dcmtk-3.6.1_20160216/dcmdata/include/**",
+					"$(PROJECT_DIR)/dcmtk/ofstd/include/**",
+					"$(PROJECT_DIR)/dcmtk/oflog/include/**",
+					"$(PROJECT_DIR)/dcmtk/dcmdata/include/**",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = dcmtkObjc;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
