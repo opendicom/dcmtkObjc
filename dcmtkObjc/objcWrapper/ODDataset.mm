@@ -12,7 +12,7 @@
 }
 
 -(DcmEVR)dcmEVR{
-    NSLog(@"%@[%d] dcmEVR",[self debugDescription],[self retainCount]);
+    NSLog(@"%@[%lu] dcmEVR",[self debugDescription],(unsigned long)[self retainCount]);
     return ((DcmDataset*)_dcmtk)->ident();
 }
 -(DcmSequenceOfItems*)sequenceOfItemsForTagKey:(DcmTagKey)tk{
@@ -72,6 +72,14 @@
         [mutableArray addObject:tagString];
     }
     return [NSArray arrayWithArray:mutableArray];
+}
+
+-(id)parentNode{
+    return _parentNode;
+}
+
+-(NSString*)tagPath{
+    return _tagPath;
 }
 
 @end

@@ -24,7 +24,6 @@
 }
 
 -(DcmItem*)dcmItem;
-
 -(NSData*)data;
 -(NSString*)stringValue;
 

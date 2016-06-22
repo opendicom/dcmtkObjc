@@ -18,6 +18,7 @@
     ODDataset *dataset;
 }
 
++(id)atPath:(NSString*)path;
 -(id)initWithFilePath:(NSString*)filePath;
 -(DcmFileFormat*)file;
 -(ODMetaInfo*)metaInfo;

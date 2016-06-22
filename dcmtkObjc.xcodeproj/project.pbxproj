@@ -930,7 +930,6 @@
 				4A876F631D18D465004B8240 /* DCMTK.xcodeproj */,
 				4A78DA731CFC7E5200B8C0D0 /* LICENSE */,
 				4A78DA721CFC7E5200B8C0D0 /* README.md */,
-				4AA304391D19D07800E012AD /* dcmtkHeaders */,
 				4A9059F81CF5F72700A9CA2F /* dcmtkObjc */,
 				4A78DBD01CFE37A200B8C0D0 /* dicom.dic */,
 				4A78DA4D1CFB2EE400B8C0D0 /* libs_OSX10.11 */,
@@ -955,13 +954,6 @@
 			);
 			name = dcmtkObjc;
 			path = dcmtkObjcWrapper;
-			sourceTree = "<group>";
-		};
-		4AA304391D19D07800E012AD /* dcmtkHeaders */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = dcmtkHeaders;
 			sourceTree = "<group>";
 		};
 		4AEFE7BF1D040536005BA949 /* ODElementTypes */ = {

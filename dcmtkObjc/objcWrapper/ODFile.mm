@@ -2,6 +2,11 @@
 
 @implementation ODFile
 
++(id)atPath:(NSString*)path
+{
+    return [[[[self class] alloc] initWithFilePath:path]autorelease];
+}
+
 - (id) initWithFilePath:(NSString*)filePath
 {
 	if ((self = [super init])) {

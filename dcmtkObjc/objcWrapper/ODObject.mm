@@ -9,11 +9,16 @@
         _parentNode=pn;
         _receiverNode=rn;
         _dcmtk=dcmtk;
-        NSLog(@"%d%@ \"%@\" ",[self retainCount],[self debugDescription],_tagPath);
+        NSLog(@"%lu%@ \"%@\" ",(unsigned long)[self retainCount],[self debugDescription],_tagPath);
         return self;
     }
     return nil;
 }
 
+-(void)dealloc {
+    [_tagPath release];
+    [_parentNode release];
+    [super dealloc];
+}
 
 @end

@@ -16,18 +16,19 @@
 //=====================
 //introspective methods
 //=====================
+-(NSString*)tagPath;
+-(id)parentNode;
 -(DcmEVR)dcmEVR;//returns dcmtk extended VRs (where items and other are also vrs)
--(NSUInteger)count;
+-(NSString*)vrString;
+-(UInt16)vrUInt16;
+
+-(NSUInteger)count;//children or multivalue
 -(NSArray*)childrenArray;
 -(id)find:(NSString*)nodePath;
 //node is one of ODItem, ODElement, ODSequence
 //in case node doesn´t exist, returns deepest existing node
 //in case node exists, returns node
 //in case tagPath is badly formed returns nil
--(id)parentNode;
--(NSString*)tagPath;
--(NSString*)vrString;
--(UInt16)vrUInt16;
 
 //=================
 //insertion methods
@@ -76,7 +77,7 @@
 @interface ODObject : NSObject {
     NSString* _tagPath;
     id        _parentNode;//parent of receiver subclass of ODObject
-    id        _receiverNode;//receiver subclass of ODObject
+    id        _receiverNode;//receiver subclass instance of ODObject
     id        _dcmtk;//corresponding class in dcmtk
 }
 
